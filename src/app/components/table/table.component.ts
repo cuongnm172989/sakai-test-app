@@ -98,6 +98,15 @@ export class TableComponent implements OnInit {
     onSort() {
         this.updateRowGroupMetaData();
     }
+    paginate(event) {
+        //event.first: Index of first record being displayed 
+        //event.rows: Number of rows to display in new page 
+        //event.page: Index of the new page 
+        //event.pageCount: Total number of pages 
+        let pageIndex = event.first/event.rows + 1 
+        console.log("pageInfes", pageIndex)
+        // Index of the new page if event.page not defined.
+    }
 
     updateRowGroupMetaData() {
         this.rowGroupMetadata = {};

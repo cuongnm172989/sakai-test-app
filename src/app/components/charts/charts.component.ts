@@ -80,7 +80,7 @@ export class ChartsComponent implements OnInit, OnDestroy {
         };
 
         this.pieData = {
-            labels: ['A', 'B', 'C'],
+            labels: ['Công ty trách nhiệm hữu hạn một thành viên ABC ABC', 'Công ty trách nhiệm hữu hạn một thành viên ABC ABC', 'Công ty trách nhiệm hữu hạn một thành viên ABC ABC'],
             datasets: [
                 {
                     data: [300, 50, 100],
